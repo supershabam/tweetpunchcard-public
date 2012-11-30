@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+    <%- css('style') %>
+    <!-- start Mixpanel --><script type="text/javascript">(function(c,a){window.mixpanel=a;var b,d,h,e;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===c.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.1.min.js';d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d);a._i=[];a.init=function(b,c,f){function d(a,b){var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]);a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var g=a;"undefined"!==typeof f?
+g=a[f]=[]:f="mixpanel";g.people=g.people||[];h="disable track track_pageview track_links track_forms register register_once unregister identify name_tag set_config people.identify people.set people.increment".split(" ");for(e=0;e<h.length;e++)d(g,h[e]);a._i.push([b,c,f])};a.__SV=1.1})(document,window.mixpanel||[]);
+mixpanel.init("3617c8d278fd86907979941eca0f2047");</script><!-- end Mixpanel -->
+  </head>
+  <body>
+    <div id="page">
+      <header id="header" class="header">
+        <h1>TweetPunchcard</h1>
+        <p>Quickly view your tweeting habits</p>
+
+      </header>
+      <div id="errors" />
+      <div id="controls">
+        <input type="text" class="input-handle" placeholder="@supershabam" />
+        <button class="button-handle">Go!</button>
+      </div>
+      <div id="punchcard-holder"></div>
+      <footer id="footer" class="footer">
+        Programmed with love by <a href="http://supershabam.com/" target="_blank">supershabam</a>
+        <a href="https://twitter.com/supershabam" class="twitter-follow-button" data-show-count="false">Follow @supershabam</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </footer>
+    </div>
+    <%- js('vendor/jquery') %>
+    <%- js('vendor/lodash') %>
+    <%- js('vendor/backbone') %>
+    <%- js('vendor/moment') %>
+    <%- js('vendor/spin') %>
+    <%- js('raphael') %>
+    <script src='/browserify.js'></script>
+  </body>
+</html>
+
